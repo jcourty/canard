@@ -32,9 +32,10 @@ public class Simulateur {
 		System.out.println(LIGNE);
 
 		for (Canard canard : canards) {
-			System.out.println(canard.nom() + " : " + canard.afficher());
+			System.out.println("\n"+canard.nom() + " : " + canard.afficher());
 			System.out.println(canard.nager());
 			System.out.println(canard.effectuerVol());
+			System.out.println(canard.effectuerCancan());
 		}
 	}
 }

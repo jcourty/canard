@@ -1,14 +1,17 @@
 package canard.model;
 
+import canard.model.cancan.ComportementCancan;
 import canard.model.vol.ComportementVol;
 
 public class Canard {
 	protected String nom;
 	protected ComportementVol comportementVol;
+	protected ComportementCancan comportementCancan;
 	
-	protected Canard(String nom, ComportementVol comportementVol) {
+	protected Canard(String nom, ComportementVol comportementVol, ComportementCancan comportementCancan) {
 		this.nom=nom;
 		this.comportementVol=comportementVol;
+		this.comportementCancan=comportementCancan;
 	}
 	
 	public String nager() {
@@ -21,6 +24,10 @@ public class Canard {
 	
 	public String effectuerVol() {
 		return comportementVol.voler();
+	}
+	
+	public String effectuerCancan() {
+		return comportementCancan.cancaner();
 	}
 
 	public String nom() {
