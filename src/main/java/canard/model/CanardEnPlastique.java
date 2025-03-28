@@ -11,7 +11,7 @@ public class CanardEnPlastique extends Canard{
 	
 	@Override
 	public String afficher() {
-		return "Je suis un canard en Plastique ";
+		return "Je suis un canard en plastique";
 	}
 	
 	public String nom() {

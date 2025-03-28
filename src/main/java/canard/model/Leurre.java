@@ -11,7 +11,7 @@ public class Leurre extends Canard{
 	
 	@Override
 	public String afficher() {
-		return "Je suis un leurre ";
+		return "Je suis un leurre";
 	}
 		
 	public String nom() {

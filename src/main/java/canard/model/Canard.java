@@ -15,7 +15,7 @@ public class Canard {
 	}
 	
 	public String nager() {
-		return "Tous les canards flottent, même les leurres ";
+		return "Tous les canards flottent, même les leurres!";
 	}
 	
 	public String afficher() {

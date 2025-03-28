@@ -4,6 +4,6 @@ public class Coincoin implements ComportementCancan{
 
 	@Override
 	public String cancaner() {
-		return "Coin-coin ";
+		return "Coin-coin";
 	}
 }

@@ -11,7 +11,7 @@ public class Mandarin extends Canard{
 	
 	@Override
 	public String afficher() {
-		return "Je suis un vrai Mandarin ";
+		return "Je suis un vrai mandarin";
 	}
 	
 	public String nom() {
