@@ -5,6 +5,9 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import canard.model.cancan.Coincoin;
+import canard.model.vol.NePasVoler;
+
 class CanardTest {
 	private static final String NAGER = "Tous les canards flottent, même les leurres!";
 
@@ -66,6 +69,20 @@ class CanardTest {
 
 		assertEquals("Rubber", canardPlastique.nom());
 		assertEquals("Je suis un canard en plastique", canardPlastique.afficher());
+	}
+	
+	@Test
+	public void changeCorectementDeComportementVol() {	
+		colvert.changerComportementVol(new NePasVoler());
+		String texteVolColvert = colvert.effectuerVol();
+		assertEquals(NE_PAS_VOLER,texteVolColvert);
+	}
+	
+	@Test
+	public void changeCorectementDeComportementCancan() {	
+		colvert.changerComportementCancan(new Coincoin());
+		String texteCancanColvert = colvert.effectuerCancan();
+		assertEquals(COINCOIN,texteCancanColvert);
 	}
 
 }

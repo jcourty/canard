@@ -34,4 +34,14 @@ public class Canard {
 		return nom;
 	}
 
+
+	public void changerComportementVol(ComportementVol comportementVol) {
+		this.comportementVol = comportementVol;
+	}
+
+	public void changerComportementCancan(ComportementCancan comportementCancan) {
+		this.comportementCancan = comportementCancan;
+	}
+	
+
 }
