@@ -6,7 +6,7 @@ import canard.model.cancan.*;
 public class PrototypeCanard extends Canard{
 
 	public PrototypeCanard(String nom) {
-		super(nom, new NePasVoler(), new CanardMuet());
+		super(nom, new PropulsionAReaction(), new CanardMuet());
 	}
 
 	@Override

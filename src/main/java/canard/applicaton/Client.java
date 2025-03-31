@@ -20,8 +20,6 @@ public class Client {
 		System.out.println("");
 		System.out.println(prototype.afficher());
 		System.out.println(prototype.effectuerVol());
-		prototype.changerComportementVol(new PropulsionAReaction());
-		System.out.println(prototype.effectuerVol());
 
 	}
 

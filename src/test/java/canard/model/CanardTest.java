@@ -93,9 +93,9 @@ class CanardTest {
 		
 		Canard prototype = new PrototypeCanard("Etienne");
 		assertEquals("Je suis un prototype de canard", prototype.afficher());
-		assertEquals(NE_PAS_VOLER, prototype.effectuerVol());
-		prototype.changerComportementVol(new PropulsionAReaction());
 		assertEquals("Je vole avec un réacteur !",prototype.effectuerVol());
+		prototype.changerComportementVol(()->"Je vole avec un engin à propulsion !");
+		assertEquals("Je vole avec un engin à propulsion !", prototype.effectuerVol());
 	}
 
 }
