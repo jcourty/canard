@@ -4,7 +4,7 @@ import canard.model.cancan.Cancan;
 import canard.model.vol.VolerAvecDesAiles;
 
 public class Colvert extends Canard{
-	
+
 	public Colvert(String nom) {
 		super(nom,new VolerAvecDesAiles(),new Cancan());
 	}

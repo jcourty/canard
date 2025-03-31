@@ -34,7 +34,6 @@ public class Canard {
 		return nom;
 	}
 
-
 	public void changerComportementVol(ComportementVol comportementVol) {
 		this.comportementVol = comportementVol;
 	}

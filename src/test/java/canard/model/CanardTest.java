@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import canard.model.cancan.Coincoin;
 import canard.model.vol.NePasVoler;
+import canard.model.vol.PropulsionAReaction;
 
 class CanardTest {
 	private static final String NAGER = "Tous les canards flottent, même les leurres!";
@@ -74,15 +75,27 @@ class CanardTest {
 	@Test
 	public void changeCorectementDeComportementVol() {	
 		colvert.changerComportementVol(new NePasVoler());
-		String texteVolColvert = colvert.effectuerVol();
-		assertEquals(NE_PAS_VOLER,texteVolColvert);
+		assertEquals(NE_PAS_VOLER,colvert.effectuerVol());
 	}
 	
 	@Test
 	public void changeCorectementDeComportementCancan() {	
 		colvert.changerComportementCancan(new Coincoin());
-		String texteCancanColvert = colvert.effectuerCancan();
-		assertEquals(COINCOIN,texteCancanColvert);
+		assertEquals(COINCOIN,colvert.effectuerCancan());
+	}
+	
+	@Test
+	public void testBonFonctionnementAjoutPrototypeEtPropulsion() {
+		assertEquals("Je suis un vrai colvert", colvert.afficher());		
+		assertEquals(NAGER, colvert.nager());
+		assertEquals(CANCAN, colvert.effectuerCancan());
+		assertEquals(VOLER, colvert.effectuerVol());
+		
+		Canard prototype = new PrototypeCanard("Etienne");
+		assertEquals("Je suis un prototype de canard", prototype.afficher());
+		assertEquals(NE_PAS_VOLER, prototype.effectuerVol());
+		prototype.changerComportementVol(new PropulsionAReaction());
+		assertEquals("Je vole avec un réacteur !",prototype.effectuerVol());
 	}
 
 }

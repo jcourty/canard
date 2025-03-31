@@ -12,7 +12,6 @@ public class Simulateur {
 	public static void main(String[] args) {
 
 		List<Canard> canards = mettreDesCanardsDansMonSimulateur();
-
 		faireAfficherNagerVoler(canards);
 
 	}
